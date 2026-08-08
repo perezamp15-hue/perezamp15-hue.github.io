@@ -36,3 +36,49 @@ interactive scouting reports.
 [**View my resume →**](resume.qmd)
 
 ---
+
+## Technical Skills
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### ⚙️ Data Engineering
+
+**Python · SQL · PostgreSQL**
+
+ETL/ELT Pipelines · REST APIs · Data Collection  
+Database Design · Data Validation · Automation  
+SQLAlchemy · Alembic · Scheduled Workflows
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### 📊 Data Analytics
+
+**Python · R · SQL**
+
+Exploratory Data Analysis · Statistical Analysis  
+Data Cleaning · Feature Engineering  
+Trend Analysis · KPI Development · Data Visualization
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### 🤖 Machine Learning
+
+**Scikit-learn · Pandas · NumPy**
+
+Classification · Predictive Modeling  
+Feature Selection · Model Validation  
+Accuracy · Top-K Accuracy · Log Loss
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### 🛠️ Development & Deployment
+
+**Git · GitHub · Railway · VS Code**
+
+Version Control · Cloud Deployment  
+Environment Management · Automated Jobs  
+Jupyter · Quarto · HTML Reporting
+:::
+
+:::
