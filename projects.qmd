@@ -1,19 +1,17 @@
 ---
-title: "Other Projects"
-subtitle: "Course work, side projects, and things I built to learn."
+title: "Projects"
+subtitle: "Selected data science, analytics, and data engineering work"
 listing:
   contents: projects
-  type: grid
   sort: "date desc"
+  type: grid
   categories: true
   sort-ui: false
   filter-ui: false
-  fields: [image, date, title, description, categories]
+  page-size: 6
 ---
 
-Your capstone lives on [its own page](capstone.qmd). Everything else — course
-projects, analyses you did for fun, contributions — collects here automatically.
-
-Each project is a folder under `projects/` with an `index.qmd`. Add a folder,
-re-render, and a new card shows up. Delete the example below once you have one
-real project of your own.
+My projects span **data engineering, analytics, automation, machine learning,
+and data collection design**. Each project below highlights a different part of
+the data lifecycle, from collecting and structuring raw information to building
+models and communicating results.

@@ -1,0 +1,55 @@
+---
+title: "Keck Medicine Sustainability Data Automation"
+description: "Automated extraction, cleaning, and standardization of operational sustainability data from PDFs, spreadsheets, and web sources."
+author: "Aaron Perez Sales"
+date: 2026-08-08
+categories: [data-engineering, automation, python, sustainability]
+---
+
+## Project Overview
+
+During my sustainability internship with Keck Medicine of USC, I worked on
+improving the collection and preparation of operational sustainability data.
+Many of the source files required manual extraction, cleaning, filtering, and
+standardization before they could be used for reporting and analysis.
+
+I developed Python-based workflows to automate portions of this process,
+including extracting structured information from source documents, validating
+records, filtering relevant locations or accounts, and preparing standardized
+output files for downstream reporting.
+
+## Problem
+
+Operational data was distributed across multiple source formats, including PDF
+documents, Excel files, and web-based reports. Manual collection made recurring
+reporting time-consuming and introduced opportunities for inconsistent
+formatting and data-entry errors.
+
+The goal was to build repeatable workflows that could reduce manual work while
+improving data consistency and accessibility.
+
+## What I Built
+
+The workflow included:
+
+- Python-based data extraction
+- PDF and structured-document parsing
+- Web scraping and automated downloads
+- Excel processing and transformation
+- Site, account, and location filtering
+- Data validation and duplicate detection
+- Standardized output files for reporting
+- Reusable scripts for recurring data collection
+
+## Tools
+
+**Python · Pandas · Excel · Power Query · Web Scraping · Data Cleaning · Automation**
+
+## Impact
+
+The automated workflows reduced the amount of manual preparation required for
+recurring sustainability reporting and created more consistent source data for
+analysis and dashboard development.
+
+This work supported a broader effort to restructure several years of legacy
+organizational data and improve its usability for decision-making.

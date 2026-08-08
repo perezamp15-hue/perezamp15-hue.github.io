@@ -1,0 +1,51 @@
+---
+title: "AI-Assisted Agricultural Survey Design"
+description: "Designed a structured questionnaire and AI-supported workflow for collecting regenerative agriculture practice data."
+author: "Aaron Perez Sales"
+date: 2026-08-08
+categories: [data-collection, survey-design, ai, agriculture]
+---
+
+## Project Overview
+
+As part of the RegenScore project through the UC Davis AIFS Fellowship, I
+worked on improving how regenerative agriculture practices were collected and
+organized.
+
+The project focused on designing a more structured questionnaire that could
+capture farming-practice information consistently while improving the
+connection between agricultural producers and downstream stakeholders.
+
+## Problem
+
+Agricultural sustainability information can be difficult to compare when
+responses are collected using inconsistent terminology or loosely structured
+questions.
+
+The goal was to create a questionnaire framework that produced more consistent,
+usable data while reducing the burden of manual data collection.
+
+## What I Built
+
+The project included:
+
+- Designing and refining questionnaire structures
+- Organizing agricultural practice categories
+- Improving consistency of collected responses
+- Building structured Excel-based data collection workflows
+- Developing an AI-assisted questionnaire concept
+- Designing data structures for storing survey results
+- Working with stakeholders to improve question clarity and usefulness
+
+## Tools
+
+**Excel · Data Collection Design · Database Design · AI-Assisted Workflows · Data Standardization**
+
+## Impact
+
+The redesigned workflow helped create a more consistent approach for capturing
+regenerative farming practices and supported the development of structured
+agricultural datasets.
+
+The project also explored how AI-assisted questionnaires could make data
+collection more scalable while maintaining a standardized structure.
