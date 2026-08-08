@@ -42,7 +42,7 @@ interactive scouting reports.
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
-### ⚙️ Data Engineering
+### Data Engineering
 
 **Python · SQL · PostgreSQL**
 
@@ -52,7 +52,7 @@ SQLAlchemy · Alembic · Scheduled Workflows
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-### 📊 Data Analytics
+### Data Analytics
 
 **Python · R · SQL**
 
@@ -62,7 +62,7 @@ Trend Analysis · KPI Development · Data Visualization
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-### 🤖 Machine Learning
+### Machine Learning
 
 **Scikit-learn · Pandas · NumPy**
 
@@ -72,7 +72,7 @@ Accuracy · Top-K Accuracy · Log Loss
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-### 🛠️ Development & Deployment
+### Development & Deployment
 
 **Git · GitHub · Railway · VS Code**
 
