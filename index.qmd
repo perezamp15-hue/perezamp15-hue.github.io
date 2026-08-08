@@ -6,7 +6,7 @@ about:
   template: trestles
   image-shape: round
   image-width: 16em
-    links:
+  links:
     - icon: github
       text: GitHub
       href: https://github.com/perezamp15-hue
