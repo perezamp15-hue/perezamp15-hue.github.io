@@ -1,54 +1,114 @@
 ---
-title: "Capstone: [Your Capstone Title]"
-subtitle: "A one-sentence hook: what you built and who it helps."
-date: 2026-07-27
+title: "MLB Matchup Intelligence & Pitch Strategy System"
+subtitle: "An end-to-end baseball analytics platform for turning pitch-level data into matchup and game-planning recommendations."
+date: 2026-08-08
 image: projects/capstone/featured.svg
-categories: [capstone, machine-learning, R]
+categories: [capstone, machine-learning, data-engineering, baseball-analytics]
 toc: true
 ---
 
-::: {.callout-note appearance="simple"}
-This is the anchor of your portfolio. A hiring manager who reads only one page
-should read this one. Replace every bracketed placeholder, then delete this note.
-:::
+## Project Overview
 
-## The one-liner
+This capstone builds an end-to-end MLB analytics system that transforms raw
+game and pitch-level data into actionable matchup recommendations for hitters
+and pitchers. The project combines automated data collection, PostgreSQL
+storage, feature engineering, statistical analysis, and machine learning to
+support game preparation and pitch-strategy decisions.
 
-> We integrated **\[data sources\]** into **\[dataset\]** so that
-> **\[stakeholder\]** can **\[decision they can now make\]**.
+**Role:** Data engineering, analytics, machine learning, reporting, and deployment  
+**Project type:** Graduate Data Science Capstone  
+**Repository:** [View the GitHub repository](https://github.com/perezamp15-hue/data510-capstone)
 
-**Role:** \[e.g. I led the data pipeline and validation.\]
-**Team:** \[solo, or name + link teammates.\]
-**Repo:** [github.com/perezamp15-hue/data510-capstone](https://github.com/perezamp15-hue/data510-capstone)
+## Problem & Research Question
 
-## The question
+Baseball teams have access to enormous amounts of pitch-level data, but turning
+that information into useful game-planning recommendations is difficult. Raw
+statistics alone do not always explain how a specific hitter should approach a
+specific pitcher or how a pitcher should attack an opposing lineup.
 
-What problem were you solving, and why does it matter to a real stakeholder?
-Two or three sentences. No jargon a hiring manager would have to look up.
+This project asks:
 
-## The data
+**How can historical pitch-level MLB data be transformed into reproducible,
+matchup-specific recommendations for hitters and pitchers?**
 
-Where the data came from, how much of it, and the one hard thing about it
-(missingness, joins across sources, scale, privacy). This is your data
-engineering story — the part the repo link backs up.
+The goal is to create a system that helps translate large-scale baseball data
+into concise scouting information that can support pre-game preparation and
+matchup strategy.
 
-## The approach
+## Data & Data Engineering
 
-Your method at portfolio depth: shorter than your M4 write-up, longer than a
-tweet. What did you try, what did you keep, and why.
+The system uses MLB game, roster, schedule, and pitch-level data collected from
+public MLB endpoints. The pipeline stores structured information in a PostgreSQL
+database and supports both historical backfills and recurring updates.
 
-## Findings
+The data pipeline includes:
 
-Lead with your best figure or your architecture diagram.
+- MLB schedule and game metadata
+- Team and player information
+- Pitch-by-pitch game data
+- Pitch velocity, movement, location, count, and outcome information
+- Batter, pitcher, and matchup-level historical features
 
-![Replace with your key result or system diagram.](projects/capstone/featured.svg){fig-alt="Placeholder capstone figure" width="90%"}
+The warehouse contains millions of pitch-level observations, which makes
+efficient collection, storage, validation, and feature generation an important
+part of the project.
 
-State the finding in plain language, then the caveat. Sparse and true beats
-full and shaky.
+The project uses **Python, SQLAlchemy, PostgreSQL, Alembic, and Railway** to
+manage the collection and production data workflow.
 
-## The full write-up
+## Methods
 
-Pick the option that matches where your write-up lives, keep one, delete the rest.
+The project combines data engineering, statistical analysis, and machine
+learning into a single workflow.
+
+First, automated Python collectors retrieve MLB game and pitch information and
+load it into a PostgreSQL database. Feature-building scripts then aggregate
+historical performance across pitcher, batter, count, and matchup contexts.
+
+The modeling workflow evaluates historical pitch-selection patterns using
+multiple levels of context, including overall pitcher tendencies, pitcher-count
+combinations, and matchup history. Predictions are evaluated using accuracy,
+top-three accuracy, and log loss.
+
+The reporting layer converts these results into scouting reports that highlight
+pitch usage, hitter tendencies, matchup strengths and weaknesses, and recommended
+attack strategies.
+
+## Results
+
+The system successfully combines automated data collection, feature generation,
+modeling, and reporting into a reproducible end-to-end workflow.
+
+Model evaluation showed that adding pitcher-specific context substantially
+improved pitch-selection predictions compared with broader overall or
+count-only baselines. The strongest models correctly placed the actual pitch
+within their top three predictions for roughly three-quarters of evaluated
+pitches.
+
+Example test results included:
+
+| Model | Accuracy | Top-3 Accuracy |
+|---|---:|---:|
+| Pitcher + Count | 37.1% | 75.9% |
+| Pitcher | 37.0% | 76.3% |
+| Count Only | 30.7% | 61.4% |
+| Overall Baseline | 30.7% | 60.8% |
+
+These results suggest that pitcher-specific tendencies provide meaningful
+predictive information beyond count or league-wide tendencies alone.
+
+![Capstone system or results overview.](projects/capstone/featured.svg){fig-alt="MLB capstone system overview" width="90%"}
+
+## Project Artifacts
+
+The final project materials are available below.
+
+- 📄 **Final write-up:** PDF coming soon
+- 🖼️ **Conference poster:** PDF coming soon
+- 💻 **Source code:** [GitHub Repository](https://github.com/perezamp15-hue/data510-capstone)
+- 📊 **Scouting reports:** Generated HTML reports produced by the project pipeline
+
+The PDF links will be added here once the final versions are published.
 
 ::: {.panel-tabset}
 
@@ -78,7 +138,19 @@ rely on `freeze`) on any chunk that needs data the public repo does not contain.
 
 :::
 
-## Dig deeper
+## Reproducibility
 
-- 📦 **Code & pipeline:** [your-capstone-repo](https://github.com/your_github_username/your-capstone-repo)
-- 📊 **Slides / poster:** \[link if you have one\]
+The project is designed so another developer can clone the repository, install
+the required Python dependencies, configure the database connection, and run
+the analysis pipeline.
+
+A typical setup is:
+
+```bash
+git clone https://github.com/perezamp15-hue/data510-capstone.git
+cd data510-capstone
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install -r requirements.txt
