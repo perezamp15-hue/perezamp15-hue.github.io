@@ -7,24 +7,27 @@ about:
   image-width: 12em
 ---
 
-## Hi, I'm Blitz 👋
+## Hi, I'm Aaron 👋
 
 The home page is the ten-second version. This is the longer story — write it in
 your own voice.
 
-I came to data science from \[your path: a major, a job, a question that would
-not leave you alone\]. What keeps me here is \[the part of the work you genuinely
-enjoy — the modeling, the wrangling, the moment a chart makes something click\].
+I came to data science from a background in environmental science and a passion for using data to drive sustainable practices. What keeps me here is the thrill of uncovering insights from complex datasets and the opportunity to make a positive impact through my work.
 
-At Willamette my focus has been \[your emphasis: forecasting, causal inference,
-NLP, data engineering, ...\]. My [capstone](capstone.qmd) is where that comes
-together.
+At Willamette my focus has been on data engineering and analytics, with a particular interest in applying machine learning techniques to real-world problems. My [capstone](capstone.qmd) is where that comes together.
 
 ### Beyond the terminal
 
-- 🌲 \[Something human — a hobby, a place, a cause.\]
-- 📚 \[Currently reading / learning / building.\]
-- 🎯 \[What you want to be doing in two years.\]
+- 🌲 I enjoy hiking, exploring the outdoors, and baking.
+- 📚 I'm currently learning about advanced machine learning techniques and their applications in environmental science.
+
+At Willamette my focus has been on data engineering and analytics, with a particular emphasis on machine learning. My [capstone](capstone.qmd) is where that comes together.
+
+### Beyond the terminal
+
+- 🌲 I enjoy hiking, exploring the outdoors, and baking.
+- 📚 I'm currently reading about the latest advancements in AI and their potential impact on various industries.
+- 🎯 In two years, I hope to be working on impactful data projects 
 
 ### Get in touch
 

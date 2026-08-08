@@ -1,156 +1,417 @@
 ---
 title: "MLB Matchup Intelligence & Pitch Strategy System"
-subtitle: "An end-to-end baseball analytics platform for turning pitch-level data into matchup and game-planning recommendations."
+subtitle: "An end-to-end baseball analytics platform for data-driven matchup analysis and game planning"
 date: 2026-08-08
-image: projects/capstone/featured.svg
-categories: [capstone, data-engineering, baseball-analytics]
+categories: [capstone, baseball-analytics, machine-learning, data-engineering]
 toc: true
 ---
 
 ## Project Overview
 
-This capstone builds an end-to-end MLB analytics system that transforms raw
-game and pitch-level data into actionable matchup recommendations for hitters
-and pitchers. The project combines automated data collection, PostgreSQL
-storage, feature engineering, statistical analysis, and machine learning to
-support game preparation and pitch-strategy decisions.
+This graduate data science capstone develops an end-to-end MLB analytics
+platform that transforms large-scale game and pitch-level data into
+matchup-specific recommendations for hitters and pitchers. The system combines
+automated data collection, PostgreSQL data engineering, feature generation,
+statistical analysis, machine learning, and automated HTML reporting to support
+baseball game preparation. Rather than presenting historical statistics alone,
+the project translates pitcher tendencies, batter performance, count context,
+pitch characteristics, and predictive model results into concise scouting
+information that can help identify how a hitter should approach an opposing
+pitcher and how a pitcher should attack an opposing lineup.
 
-**Role:** Data engineering, analytics, machine learning, reporting, and deployment  
-**Project type:** Graduate Data Science Capstone  
-**Repository:** [View the GitHub repository](https://github.com/perezamp15-hue/data510-capstone)
+**Project:** Graduate Data Science Capstone  
+**Institution:** Willamette University  
+**Primary tools:** Python · SQL · PostgreSQL · Scikit-learn · SQLAlchemy · Alembic · Railway · GitHub · Quarto
 
-## Problem & Research Question
-
-Baseball teams have access to enormous amounts of pitch-level data, but turning
-that information into useful game-planning recommendations is difficult. Raw
-statistics alone do not always explain how a specific hitter should approach a
-specific pitcher or how a pitcher should attack an opposing lineup.
-
-This project asks:
-
-**How can historical pitch-level MLB data be transformed into reproducible,
-matchup-specific recommendations for hitters and pitchers?**
-
-The goal is to create a system that helps translate large-scale baseball data
-into concise scouting information that can support pre-game preparation and
-matchup strategy.
-
-## Data & Data Engineering
-
-The system uses MLB game, roster, schedule, and pitch-level data collected from
-public MLB endpoints. The pipeline stores structured information in a PostgreSQL
-database and supports both historical backfills and recurring updates.
-
-The data pipeline includes:
-
-- MLB schedule and game metadata
-- Team and player information
-- Pitch-by-pitch game data
-- Pitch velocity, movement, location, count, and outcome information
-- Batter, pitcher, and matchup-level historical features
-
-The warehouse contains millions of pitch-level observations, which makes
-efficient collection, storage, validation, and feature generation an important
-part of the project.
-
-The project uses **Python, SQLAlchemy, PostgreSQL, Alembic, and Railway** to
-manage the collection and production data workflow.
-
-## Methods
-
-The project combines data engineering, statistical analysis, and machine
-learning into a single workflow.
-
-First, automated Python collectors retrieve MLB game and pitch information and
-load it into a PostgreSQL database. Feature-building scripts then aggregate
-historical performance across pitcher, batter, count, and matchup contexts.
-
-The modeling workflow evaluates historical pitch-selection patterns using
-multiple levels of context, including overall pitcher tendencies, pitcher-count
-combinations, and matchup history. Predictions are evaluated using accuracy,
-top-three accuracy, and log loss.
-
-The reporting layer converts these results into scouting reports that highlight
-pitch usage, hitter tendencies, matchup strengths and weaknesses, and recommended
-attack strategies.
-
-## Results
-
-The system successfully combines automated data collection, feature generation,
-modeling, and reporting into a reproducible end-to-end workflow.
-
-Model evaluation showed that adding pitcher-specific context substantially
-improved pitch-selection predictions compared with broader overall or
-count-only baselines. The strongest models correctly placed the actual pitch
-within their top three predictions for roughly three-quarters of evaluated
-pitches.
-
-Example test results included:
-
-| Model | Accuracy | Top-3 Accuracy |
-|---|---:|---:|
-| Pitcher + Count | 37.1% | 75.9% |
-| Pitcher | 37.0% | 76.3% |
-| Count Only | 30.7% | 61.4% |
-| Overall Baseline | 30.7% | 60.8% |
-
-These results suggest that pitcher-specific tendencies provide meaningful
-predictive information beyond count or league-wide tendencies alone.
-
-![Capstone system or results overview.](projects/capstone/featured.svg){fig-alt="MLB capstone system overview" width="90%"}
+---
 
 ## Project Artifacts
 
-The final project materials are available below.
+All major project deliverables are available directly from this page.
 
-- 📄 **Final write-up:** PDF coming soon
-- 🖼️ **Conference poster:** PDF coming soon
-- 💻 **Source code:** [GitHub Repository](https://github.com/perezamp15-hue/data510-capstone)
-- 📊 **Scouting reports:** Generated HTML reports produced by the project pipeline
+[📄 **Final Write-up — Coming Soon**]{.btn .btn-secondary role="button"}
 
-The PDF links will be added here once the final versions are published.
+[🖼️ **View Poster PDF**](assets/capstone/poster.pdf){.btn .btn-primary role="button"}
 
-::: {.panel-tabset}
+[📊 **Open Example Scouting Report**](assets/capstone/scouting-report.html){.btn .btn-primary role="button"}
 
-### A · Native Quarto
+[💻 **View Source Code**](https://github.com/perezamp15-hue/data510-capstone){.btn .btn-outline-primary role="button"}
 
-If your write-up is a `.qmd`, copy it into `projects/capstone/index.qmd` and
-link it, or fold its sections directly into this page. Set `eval: false` (or
-rely on `freeze`) on any chunk that needs data the public repo does not contain.
+---
 
-### B · Embedded PDF
+## Research Question
 
-```markdown
-[Download the write-up (PDF)](projects/capstone/writeup.pdf){.btn .btn-primary}
+Major League Baseball produces an enormous amount of pitch-level information,
+but converting those observations into useful game-planning recommendations
+requires more than simply displaying historical statistics.
 
-<iframe src="projects/capstone/writeup.pdf" width="100%" height="800px"
-  style="border: 1px solid #ddd;"></iframe>
-```
+The primary research question for this project is:
 
-### C · Published Google Doc
+> **How can historical pitch-level MLB data be transformed into reproducible,
+> matchup-specific recommendations that help hitters and pitchers prepare for
+> an opponent?**
 
-```markdown
-[Read the full write-up](https://docs.google.com/document/d/e/XXXX/pub){.btn .btn-primary}
+The project explores whether pitcher tendencies, count context, batter
+performance, pitch characteristics, and historical matchup information can be
+combined into a system that produces useful scouting and pitch-strategy
+recommendations.
 
-<iframe src="https://docs.google.com/document/d/e/XXXX/pub?embedded=true"
-  width="100%" height="800px" style="border: 1px solid #ddd;"></iframe>
-```
+---
 
-:::
+## System Overview
+
+The project follows an end-to-end data science workflow:
+
+**MLB Data Sources → Automated Data Collection → PostgreSQL Warehouse → Feature Engineering → Statistical & Machine-Learning Analysis → Matchup Recommendations → HTML Scouting Report**
+
+The system begins with automated Python data collectors that retrieve MLB game,
+player, schedule, and pitch information. Data is validated and stored in a
+relational PostgreSQL warehouse. Feature-building workflows then transform raw
+pitch observations into pitcher, batter, count, and matchup-level information.
+
+Statistical analysis and predictive models use those features to identify
+tendencies and estimate likely pitch-selection behavior. Finally, the reporting
+layer converts the analytical output into scouting information designed for
+game preparation.
+
+> **Figure 1. System architecture.** Raw MLB data moves through automated
+> collection, relational storage, feature engineering, modeling, and reporting
+> before becoming matchup-specific decision-support information.
+
+---
+
+## Data & Data Engineering
+
+The project uses publicly accessible MLB game and pitch-level information.
+
+The data pipeline collects information including:
+
+- game and schedule metadata
+- team and roster information
+- pitcher and batter identifiers
+- pitch type
+- release velocity
+- spin rate
+- release characteristics
+- pitch location
+- ball-strike count
+- inning and game context
+- pitch and plate-appearance outcomes
+
+Historical and recurring data are stored in PostgreSQL. Python collectors and
+SQLAlchemy database models support automated ingestion, while Alembic
+migrations are used to maintain changes to the relational database schema.
+
+The resulting data warehouse contains millions of pitch-level observations.
+Because of the scale of the data, collection efficiency, database design,
+validation, feature generation, and reproducibility are significant components
+of the project rather than preprocessing steps performed only once.
+
+---
+
+## Methods
+
+The analytical workflow combines descriptive baseball analytics, feature
+engineering, and predictive modeling.
+
+Feature generation creates historical summaries across several levels of
+context, including:
+
+- overall pitch tendencies
+- pitcher-specific tendencies
+- count-specific tendencies
+- pitcher and count combinations
+- batter tendencies
+- pitcher-batter matchup information
+
+Pitch-selection models are compared against progressively more specific
+baselines to determine whether additional context improves predictive
+performance.
+
+Models are evaluated using three primary metrics:
+
+**Accuracy** measures how often the model's highest-probability pitch matches
+the observed pitch.
+
+**Top-3 accuracy** measures how often the observed pitch appears among the
+model's three highest-ranked predictions.
+
+**Log loss** evaluates the quality of the full probability distribution rather
+than considering only the highest-ranked prediction.
+
+The final reporting layer combines predictive results with descriptive
+statistics to produce matchup-oriented scouting recommendations.
+
+---
+
+## Results Highlight
+
+The evaluation indicates that incorporating pitcher-specific context improves
+pitch-selection prediction compared with broader count-only and overall
+baselines.
+
+| Model | Accuracy | Top-3 Accuracy | Log Loss |
+|---|---:|---:|---:|
+| **Pitcher + Count** | **37.1%** | **75.9%** | 3.156 |
+| **Pitcher** | **37.0%** | **76.3%** | 2.433 |
+| Count Only | 30.7% | 61.4% | 1.967 |
+| Overall Baseline | 30.7% | 60.8% | 1.984 |
+
+> **Table 1. Pitch-selection model performance.** Pitcher-specific models
+> substantially improved both exact and top-three prediction accuracy compared
+> with count-only and overall baselines.
+
+The pitcher model placed the observed pitch among its three highest-ranked
+predictions for approximately **76% of test observations**, compared with
+approximately **61% for the broader baselines**.
+
+The difference is important for the intended use of the project. The objective
+is not to claim that the next pitch can always be predicted exactly. Instead,
+the model can help narrow the set of pitches that a hitter or analyst should
+consider most likely in a particular context.
+
+---
+
+## Scouting & Decision-Support Output
+
+The analytical results are translated into an HTML scouting report rather than
+being left only as model metrics.
+
+The reporting system is designed to present information such as:
+
+- pitcher arsenal and pitch-usage tendencies
+- batter performance by pitch type
+- count-dependent pitch selection
+- pitcher and batter matchup tendencies
+- hot and cold pitch-location regions
+- pitcher attack recommendations
+- hitter approach recommendations
+- matchup strengths and weaknesses
+- contextual statistics
+- model confidence and supporting evidence
+
+This reporting layer connects the technical model to the project's primary
+stakeholder use case: **pre-game scouting and matchup preparation**.
+
+[📊 **Explore the Example Scouting Report**](assets/capstone/scouting-report.html){.btn .btn-primary role="button"}
+
+> **Figure 2. Example scouting output.** The HTML report translates the
+> underlying data and modeling workflow into matchup-oriented information that
+> can be reviewed without interacting directly with the database or Python
+> pipeline.
+
+---
 
 ## Reproducibility
 
-The project is designed so another developer can clone the repository, install
-the required Python dependencies, configure the database connection, and run
-the analysis pipeline.
+The project source code is maintained in a public GitHub repository.
 
-A typical setup is:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/perezamp15-hue/data510-capstone.git
 cd data510-capstone
+````
 
+### 2. Create a Python environment
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
+On Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Configure environment variables
+
+Database credentials and other environment-specific values must be provided
+through environment variables.
+
+Secrets, database passwords, API credentials, and production connection strings
+should **never be committed to the public repository**.
+
+A local environment file can be used where supported by the project:
+
+```text
+DATABASE_URL=your_database_connection_string
+```
+
+The real credential should replace the example value only in the user's local
+environment.
+
+### 5. Prepare the database
+
+The project uses Alembic to manage database migrations:
+
+```bash
+alembic upgrade head
+```
+
+### 6. Run the project workflows
+
+The repository contains scripts for:
+
+* database initialization and migrations
+* MLB data collection
+* historical backfills
+* feature generation
+* model evaluation
+* matchup analysis
+* scouting-report generation
+
+Because individual execution commands may change as the project is finalized,
+the repository README serves as the authoritative source for the current
+commands required to reproduce the main analysis and reports.
+
+[💻 **View Reproduction Instructions & Source Code**](https://github.com/perezamp15-hue/data510-capstone){.btn .btn-outline-primary role="button"}
+
+---
+
+## Ethics & Responsible Use
+
+This project uses publicly accessible baseball performance information and is
+intended for academic analysis and decision support.
+
+Model outputs should **not** be interpreted as guaranteed predictions of future
+player behavior. Baseball performance is influenced by factors that are not
+fully represented in historical pitch data, including injuries, fatigue,
+mechanical adjustments, coaching decisions, weather, strategic changes, and
+small-sample matchup effects.
+
+Historical data can also reflect unequal sample sizes. A batter may have
+hundreds of observations against one type of pitcher but very few observations
+against another. Matchup-specific recommendations therefore require appropriate
+attention to sample size and uncertainty.
+
+The system is designed to support human analysis rather than replace coaching,
+scouting, or player judgment.
+
+---
+
+## Data Notice & Use Constraints
+
+The project uses publicly accessible MLB game and pitch information for
+educational and analytical purposes.
+
+No private medical records, private team information, authentication
+credentials, or other confidential player information are intentionally used
+by the analysis.
+
+The public repository should contain only code, documentation, configuration
+examples, and data that are appropriate for public distribution.
+
+Production database credentials, passwords, private connection strings, API
+secrets, and other sensitive configuration values must remain outside version
+control and be supplied through environment variables.
+
+---
+
+## Licenses & Attribution
+
+MLB game and pitch information used by this project is derived from publicly
+accessible MLB data services.
+
+Major League Baseball team names, player names, logos, trademarks, and related
+intellectual property remain the property of their respective owners.
+
+This project is an independent academic data science project and is **not
+affiliated with, sponsored by, or endorsed by Major League Baseball or any MLB
+club**.
+
+Third-party Python libraries are used according to their respective licenses.
+The project's dependency list is maintained in the repository's
+`requirements.txt` file.
+
+Project source-code licensing information should be provided in the repository's
+`LICENSE` file.
+
+---
+
+## Limitations
+
+Several limitations should be considered when interpreting the project results.
+
+First, historical tendencies do not guarantee future pitch selection or player
+performance. Pitchers and hitters continually adjust their strategies.
+
+Second, individual pitcher-batter matchups can contain relatively small sample
+sizes, making highly specific historical comparisons less reliable.
+
+Third, the size of the pitch-level dataset makes historical collection and
+feature generation computationally expensive. Full backfills and model-building
+workflows may therefore require substantial processing time.
+
+Finally, predictive performance should be interpreted within the intended
+decision-support context. Exact next-pitch prediction is inherently difficult,
+and top-ranked model outputs should be considered probabilities rather than
+certainties.
+
+Future development could incorporate additional contextual features, improved
+probability calibration, bullpen analysis, player fatigue, more detailed
+in-game situations, and additional model architectures.
+
+---
+
+## About the Team
+
+### Aaron Perez Sales
+
+**Role:** Data Scientist · Data Engineer · Project Developer
+
+Responsibilities included:
+
+* project design and research development
+* MLB data collection
+* PostgreSQL database development
+* data-pipeline engineering
+* feature engineering
+* statistical analysis
+* machine-learning development and evaluation
+* scouting-report development
+* deployment and reproducibility
+* project documentation and communication
+
+**Willamette University — Data Science**
+
+[💼 LinkedIn](https://www.linkedin.com/in/aaronperezsales) ·
+[💻 GitHub](https://github.com/perezamp15-hue) ·
+[✉️ Email](mailto:perezamp15@gmail.com)
+
+---
+
+## Final Deliverables
+
+All public project materials can be accessed below.
+
+[📄 **Final Write-up — Coming Soon**]{.btn .btn-secondary role="button"}
+
+[🖼️ **Poster PDF**](assets/capstone/poster.pdf){.btn .btn-primary role="button"}
+
+[📊 **Interactive Scouting Report**](assets/capstone/scouting-report.html){.btn .btn-primary role="button"}
+
+[💻 **GitHub Repository**](https://github.com/perezamp15-hue/data510-capstone){.btn .btn-outline-primary role="button"}
+
+---
+
+## Portfolio Integration
+
+This capstone is part of my public data science portfolio and can be accessed
+from the main portfolio navigation.
+
+[← **Return to Portfolio Home**](index.qmd)
+
+The portfolio highlights additional work in data engineering, automation,
+analytics, machine learning, and data-collection design.
+
+
+
