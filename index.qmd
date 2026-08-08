@@ -6,13 +6,18 @@ about:
   template: trestles
   image-shape: round
   image-width: 16em
-  links:
+    links:
     - icon: github
       text: GitHub
       href: https://github.com/perezamp15-hue
-    - icon: file-earmark-pdf
-      text: Resume
-      href: resume.qmd
+
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/aaronperezsales
+
+    - icon: envelope
+      text: Email
+      href: mailto:perezamp15@gmail.com
 ---
 
 I am a data scientist focused on turning complex, real-world data into reliable
