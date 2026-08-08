@@ -1,40 +1,111 @@
 ---
 title: "Resume"
+subtitle: "Data Science · Analytics · Data Engineering"
 toc: true
 ---
 
-[📄 Download PDF](assets/resume.pdf){.btn .btn-primary role="button"}
+[📄 Download Resume PDF](assets/resume.pdf){.btn .btn-primary role="button"}
 
-<iframe src="assets/resume.pdf" width="100%" height="800px"
-  style="border: 1px solid #ddd; margin-top: 1rem;">
-</iframe>
+## Professional Summary
 
-## Education
+Data science professional with hands-on experience in data visualization,
+database management, data engineering, automation, and analytics across
+healthcare sustainability, environmental conservation, and agriculture.
 
-**M.S. Data Science** — Willamette University, Salem, OR *(2026)*
-**B.S. \[Your Major\]** — \[Your University\], \[City\] *(\[year\])*
+Experienced in building dashboards, automated data pipelines, databases, and
+analytical workflows using **Python, SQL, R, PostgreSQL, Excel, and Power BI**.
 
-## Skills
+## Technical Skills
 
-| Area | Tools |
-|------|-------|
-| **Languages** | R, Python, SQL |
-| **Data & ML** | \[tidyverse / pandas, scikit-learn, ...\] |
-| **Workflow** | Git, Quarto, \[Docker, cloud, ...\] |
-| **Communication** | Technical writing, data visualization |
+| Area | Skills & Technologies |
+|---|---|
+| **Programming** | Python, SQL, R |
+| **Data Analysis** | Pandas, NumPy, Matplotlib, Statistical Analysis |
+| **Databases** | PostgreSQL, SQLAlchemy, Relational Database Design |
+| **Data Engineering** | ETL/ELT, APIs, Data Pipelines, Web Scraping, Automation |
+| **Machine Learning** | Scikit-learn, Feature Engineering, Classification, Model Evaluation |
+| **Business Intelligence** | Power BI, Dashboard Development, Data Visualization |
+| **Excel** | Power Query, VLOOKUP, Pivot Tables |
+| **Development** | Git, GitHub, VS Code, Jupyter |
+| **Reporting & Deployment** | Quarto, HTML Reporting, Railway |
 
 ## Experience
 
-**\[Job Title\]** — \[Organization\], \[Location\] *(\[dates\])*
+### Sustainability Intern
 
-- Accomplishment framed as impact, not a task description.
-- Another accomplishment with a number in it if you have one.
+**Keck Medicine of USC** — Los Angeles, CA  
+*May 2026 – Present*
 
-## Projects
+- Design and maintain interactive Power BI dashboards using five years of historical organizational data.
+- Clean and validate complex datasets using Excel, Power Query, VLOOKUPs, and Pivot Tables.
+- Develop web-scraping and automated data-collection workflows.
+- Restructure legacy datasets into standardized formats to improve accessibility and reporting.
 
-**\[Capstone Title\]** — see the [Capstone page](capstone.qmd) for the full story.
+### Design Technology Intern
 
-- One line on the problem and your role.
+**Los Angeles County Sanitation District** — Los Angeles, CA  
+*May 2025 – August 2025*
 
-*Placeholders in brackets are fine while you build. Replace them with real,
-defensible entries as they materialize — sparse and true beats full and shaky.*
+- Built and maintained SQL and Excel databases containing historical records.
+- Conducted cost-benefit analyses to evaluate data processes and improve efficiency.
+- Cleaned and restructured datasets to reduce errors and improve accessibility.
+- Standardized legacy files and performed data-quality checks.
+
+### Research Intern
+
+**RegenScore — UC Davis AIFS Fellowship** — Los Angeles, CA  
+*June 2024 – August 2024*
+
+- Developed databases focused on regenerative farming practices.
+- Designed improved questionnaire frameworks to strengthen data collection.
+- Built an AI-powered questionnaire workflow to automate collection of agricultural data.
+
+### Conservation Intern
+
+**Los Angeles Zoo and Botanical Gardens** — Los Angeles, CA  
+*June 2023 – August 2023*
+
+- Conducted soil analysis examining microbial levels, soil acidification, and native plant health.
+- Used R and environmental testing methods to analyze soil conditions.
+- Led a three-person team responsible for planning, data collection, and stakeholder communication.
+
+## Selected Project
+
+### MLB Matchup Intelligence & Pitch Strategy System
+
+**Graduate Data Science Capstone · 2026**
+
+Built an end-to-end MLB analytics platform that transforms pitch-level data
+into matchup-specific scouting and game-planning recommendations.
+
+- Developed automated Python pipelines for MLB game and pitch-level data.
+- Designed and maintained a PostgreSQL data warehouse.
+- Engineered pitcher, batter, count, and matchup-level features.
+- Built and evaluated machine-learning models for pitch-selection prediction.
+- Created automated HTML scouting reports.
+- Used Railway, PostgreSQL, and GitHub for deployment and workflow management.
+
+[**Explore the Capstone →**](capstone.qmd)
+
+## Education
+
+### Master of Data Science
+
+**Willamette University**  
+*August 2026*
+
+### Bachelor of Science in Data Science
+
+**Willamette University**  
+Minor in Environmental Science  
+*May 2026*
+
+## Leadership & Activities
+
+**Sigma Chi Fraternity** — Member
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/aaronperezsales) ·
+[GitHub](https://github.com/perezamp15-hue) ·
+[Email](mailto:perezamp15@gmail.com)
