@@ -1,169 +1,40 @@
-```markdown
 ---
 title: "Resume"
-subtitle: "Data Science · Analytics · Data Engineering"
 toc: true
 ---
 
-<div class="resume-intro">
+[📄 Download PDF](assets/resume.pdf){.btn .btn-primary role="button"}
 
-## Aaron Perez Sales
-
-**Data Scientist | Data Analyst | Data Engineer**
-
-📧 [perezamp15@gmail.com](mailto:perezamp15@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/aaronperezsales)  
-💻 [GitHub](https://github.com/perezamp15-hue)
-
-</div>
-
-[📄 Download Resume PDF](assets/resume.pdf){.btn .btn-primary role="button"}
-
----
-
-## Professional Summary
-
-Data science professional with hands-on experience in **data visualization,
-database management, data engineering, automation, and analytics** across
-healthcare sustainability, environmental conservation, and agriculture.
-
-Experienced in building dashboards, automated data pipelines, databases, and
-analytical workflows using **Python, SQL, R, PostgreSQL, Excel, and Power BI**.
-Focused on transforming complex and legacy datasets into reliable,
-decision-ready information for technical and non-technical stakeholders.
-
----
-
-## Technical Skills
-
-| Area | Skills & Technologies |
-|---|---|
-| **Programming** | Python, SQL, R |
-| **Python & Analytics** | Pandas, NumPy, Matplotlib, Scikit-learn |
-| **Databases** | PostgreSQL, SQLAlchemy, Relational Database Design |
-| **Data Engineering** | ETL/ELT, REST APIs, Data Pipelines, Web Scraping, Data Validation, Automation |
-| **Machine Learning** | Feature Engineering, Classification, Predictive Modeling, Model Evaluation |
-| **Business Intelligence** | Power BI, Dashboard Development, Data Visualization |
-| **Excel** | Power Query, VLOOKUP, Pivot Tables, Data Cleaning |
-| **Development** | Git, GitHub, VS Code, Jupyter, Command Line |
-| **Reporting & Deployment** | Quarto, HTML Reporting, Railway, Automated Workflows |
-
----
-
-## Experience
-
-### Sustainability Intern
-**Keck Medicine of USC** · Los Angeles, CA  
-*May 2026 – Present*
-
-- Design, build, and maintain interactive **Power BI dashboards** synthesizing
-  five years of historical organizational data to provide leadership with
-  actionable insights for strategic decision-making.
-- Extract, clean, and validate complex datasets using **Excel, Power Query,
-  VLOOKUPs, and Pivot Tables** before visualization and reporting.
-- Develop automated **web-scraping and data-collection workflows** to gather
-  external and internal organizational data and expand available datasets.
-- Restructure five years of legacy information into standardized formats,
-  improving accessibility and reducing friction in recurring reporting
-  workflows.
-- Build repeatable data-processing workflows that reduce manual collection and
-  preparation of sustainability data.
-
-### Design Technology Intern
-**Los Angeles County Sanitation District** · Los Angeles, CA  
-*May 2025 – August 2025*
-
-- Built and maintained **SQL and Excel databases** containing five years of
-  historical records while ensuring data accuracy and consistency.
-- Conducted **cost-benefit analyses** to evaluate existing data processes and
-  identify opportunities to improve file-management efficiency.
-- Cleaned and restructured datasets to reduce errors and make information more
-  accessible to team members.
-- Organized and standardized legacy files while performing data-quality checks
-  to improve their usability for future projects.
-
-### Research Intern
-**RegenScore — UC Davis AIFS Fellowship** · Los Angeles, CA  
-*June 2024 – August 2024*
-
-- Developed databases focused on **regenerative farming practices** while
-  collaborating with industry stakeholders on agricultural sustainability
-  standards.
-- Designed improved questionnaire frameworks in Excel to strengthen data
-  collection and connections between farmers and buyers.
-- Built an **AI-powered questionnaire workflow** to automate the collection of
-  farming-practice information and support more autonomous agricultural data
-  management.
-
-### Conservation Intern
-**Los Angeles Zoo and Botanical Gardens** · Los Angeles, CA  
-*June 2023 – August 2023*
-
-- Conducted soil analysis examining the effects of eucalyptus oils on microbial
-  levels, root distribution, soil acidification, and native plant health.
-- Used **R**, Solvita Soil Respiration testing, and Lamotte Soil Sampling Kits
-  to analyze environmental measurements and derive project findings.
-- Led a three-person team responsible for project planning, coordinated data
-  collection, analysis, and stakeholder communication.
-
----
-
-## Selected Projects
-
-### MLB Matchup Intelligence & Pitch Strategy System
-**Graduate Data Science Capstone · 2026**
-
-Built an end-to-end baseball analytics platform that transforms large-scale
-MLB pitch data into matchup-specific scouting and game-planning recommendations.
-
-- Developed automated **Python data pipelines** for collecting MLB game,
-  player, schedule, and pitch-level information.
-- Designed and maintained a **PostgreSQL data warehouse** supporting historical
-  and recurring data collection.
-- Processed millions of pitch-level observations and engineered pitcher,
-  batter, count, and matchup features for analysis.
-- Built and evaluated machine-learning models for pitch-selection prediction.
-- Evaluated model performance using **accuracy, top-3 accuracy, and log loss**.
-- Developed matchup analytics for identifying pitcher tendencies, hitter
-  strengths and weaknesses, and pitch-strategy opportunities.
-- Built automated **HTML scouting reports** that translate complex statistical
-  analysis into decision-support information.
-- Used **Railway, PostgreSQL, GitHub, and automated workflows** to support
-  deployment and recurring data updates.
-
-[**Explore the Capstone →**](capstone.qmd)
-
----
+<iframe src="assets/resume.pdf" width="100%" height="800px"
+  style="border: 1px solid #ddd; margin-top: 1rem;">
+</iframe>
 
 ## Education
 
-### Master of Data Science
-**Willamette University**  
-*August 2026*
+**M.S. Data Science** — Willamette University, Salem, OR *(2026)*
+**B.S. \[Your Major\]** — \[Your University\], \[City\] *(\[year\])*
 
-### Bachelor of Science in Data Science
-**Willamette University**  
-Minor in Environmental Science  
-*May 2026*
+## Skills
 
----
+| Area | Tools |
+|------|-------|
+| **Languages** | R, Python, SQL |
+| **Data & ML** | \[tidyverse / pandas, scikit-learn, ...\] |
+| **Workflow** | Git, Quarto, \[Docker, cloud, ...\] |
+| **Communication** | Technical writing, data visualization |
 
-## Leadership & Activities
+## Experience
 
-### Sigma Chi Fraternity
+**\[Job Title\]** — \[Organization\], \[Location\] *(\[dates\])*
 
-**Member**
+- Accomplishment framed as impact, not a task description.
+- Another accomplishment with a number in it if you have one.
 
----
+## Projects
 
-## Areas of Expertise
+**\[Capstone Title\]** — see the [Capstone page](capstone.qmd) for the full story.
 
-**Data Engineering** · **Data Analytics** · **Machine Learning** ·
-**Database Management** · **Business Intelligence** · **Data Visualization** ·
-**Automation** · **Web Scraping** · **Statistical Analysis** ·
-**Technical Communication**
+- One line on the problem and your role.
 
----
-
-[📄 Download Full Resume](assets/resume.pdf){.btn .btn-primary role="button"}
-```
+*Placeholders in brackets are fine while you build. Replace them with real,
+defensible entries as they materialize — sparse and true beats full and shaky.*
