@@ -19,7 +19,7 @@ should read this one. Replace every bracketed placeholder, then delete this note
 
 **Role:** \[e.g. I led the data pipeline and validation.\]
 **Team:** \[solo, or name + link teammates.\]
-**Repo:** [github.com/your_github_username/your-capstone-repo](https://github.com/your_github_username/your-capstone-repo)
+**Repo:** [github.com/perezamp15-hue/data510-capstone](https://github.com/perezamp15-hue/data510-capstone)
 
 ## The question
 
