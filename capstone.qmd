@@ -2,15 +2,15 @@
 title: "MLB Matchup Intelligence & Pitch Strategy System"
 subtitle: "An end-to-end baseball analytics platform for data-driven matchup analysis and game planning"
 date: 2026-08-08
-categories: [capstone, baseball-analytics, machine-learning, data-engineering]
+categories: [capstone, baseball-analytics,data-engineering]
 toc: true
 ---
 
 ## Project Overview
 
-This graduate data science capstone develops an end-to-end MLB analytics
-platform that transforms large-scale game and pitch-level data into
-matchup-specific recommendations for hitters and pitchers. The system combines
+This graduate data science capstone develops an end to end MLB analytics
+platform that transforms large scale game and pitch level data into
+matchup specific recommendations for hitters and pitchers. The system combines
 automated data collection, PostgreSQL data engineering, feature generation,
 statistical analysis, and automated HTML reporting to support
 baseball game preparation. Rather than presenting historical statistics alone,
