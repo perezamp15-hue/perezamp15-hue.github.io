@@ -1,6 +1,6 @@
 ---
 title: "MLB Matchup Intelligence & Pitch Strategy System"
-subtitle: "An end-to-end baseball analytics platform for data-driven matchup analysis and game planning"
+subtitle: "An end to end baseball analytics platform for data-driven matchup analysis and game planning"
 date: 2026-08-08
 categories: [capstone, baseball analytics, data engineering]
 toc: true
@@ -41,8 +41,8 @@ All major project deliverables are available directly from this page.
 
 ## Research Question
 
-Major League Baseball produces an enormous amount of pitch-level information,
-but converting those observations into useful game-planning recommendations
+Major League Baseball produces an enormous amount of pitch level information,
+but converting those observations into useful game planning recommendations
 requires more than simply displaying historical statistics.
 
 The primary research question for this project is:
@@ -64,11 +64,11 @@ The project follows an end to end data science workflow:
 
 The system begins with automated Python data collectors that retrieve MLB game,
 player, schedule, and pitch information. Data is validated and stored in a
-relational PostgreSQL warehouse. Feature-building workflows then transform raw
+relational PostgreSQL warehouse. Feature building workflows then transform raw
 pitch observations into pitcher, batter, count, and matchup-level information.
 
 Statistical analysis use those features to identify
-tendencies and estimate likely pitch-selection behavior. Finally, the reporting
+tendencies and estimate likely pitch selection behavior. Finally, the reporting
 layer converts the analytical output into scouting information designed for
 game preparation.
 
@@ -76,7 +76,7 @@ game preparation.
 
 ## Data & Data Engineering
 
-The project uses publicly accessible MLB game and pitch-level information.
+The project uses publicly accessible MLB game and pitch level information.
 
 The data pipeline collects information including:
 
@@ -119,18 +119,18 @@ context, including:
 - pitcher batter matchup information
 
 
-## Scouting & Decision-Support Output
+## Scouting & Decision Support Output
 
 The analytical results are translated into an HTML scouting report rather than
 being left only as model metrics.
 
 The reporting system is designed to present information such as:
 
-- pitcher arsenal and pitch-usage tendencies
+- pitcher arsenal and pitch usage tendencies
 - batter performance by pitch type
-- count-dependent pitch selection
+- count dependent pitch selection
 - pitcher and batter matchup tendencies
-- hot and cold pitch-location regions
+- hot and cold pitch location regions
 - pitcher attack recommendations
 - hitter approach recommendations
 - matchup strengths and weaknesses
@@ -138,7 +138,7 @@ The reporting system is designed to present information such as:
 - model confidence and supporting evidence
 
 This reporting layer connects the technical model to the project's primary
-stakeholder use case: **pre-game scouting and matchup preparation**.
+stakeholder use case: **pre game scouting and matchup preparation**.
 
 [📊 **Explore the Example Scouting Report**](assets/capstone/scouting-report.html){.btn .btn-primary role="button"}
 
@@ -175,7 +175,7 @@ pip install -r requirements.txt
 
 ### 4. Configure environment variables
 
-Database credentials and other environment-specific values must be provided
+Database credentials and other environment specific values must be provided
 through environment variables.
 
 Secrets, database passwords, API credentials, and production connection strings
@@ -227,11 +227,11 @@ Model outputs should not be interpreted as guaranteed predictions of future
 player behavior. Baseball performance is influenced by factors that are not
 fully represented in historical pitch data, including injuries, fatigue,
 mechanical adjustments, coaching decisions, weather, strategic changes, and
-small-sample matchup effects.
+small sample matchup effects.
 
 Historical data can also reflect unequal sample sizes. A batter may have
 hundreds of observations against one type of pitcher but very few observations
-against another. Matchup-specific recommendations therefore require appropriate
+against another. Matchup specific recommendations therefore require appropriate
 attention to sample size and uncertainty.
 
 The system is designed to support human analysis rather than replace coaching,
@@ -269,7 +269,7 @@ This project is an independent academic data science project and is **not
 affiliated with, sponsored by, or endorsed by Major League Baseball or any MLB
 club**.
 
-Third-party Python libraries are used according to their respective licenses.
+Third party Python libraries are used according to their respective licenses.
 The project's dependency list is maintained in the repository's
 `requirements.txt` file.
 
@@ -285,21 +285,21 @@ Several limitations should be considered when interpreting the project results.
 First, historical tendencies do not guarantee future pitch selection or player
 performance. Pitchers and hitters continually adjust their strategies.
 
-Second, individual pitcher-batter matchups can contain relatively small sample
+Second, individual pitcher batter matchups can contain relatively small sample
 sizes, making highly specific historical comparisons less reliable.
 
-Third, the size of the pitch-level dataset makes historical collection and
-feature generation computationally expensive. Full backfills and model-building
+Third, the size of the pitch level dataset makes historical collection and
+feature generation computationally expensive. Full backfills and model building
 workflows may therefore require substantial processing time.
 
 Finally, predictive performance should be interpreted within the intended
-decision-support context. Exact next-pitch prediction is inherently difficult,
-and top-ranked model outputs should be considered probabilities rather than
+decision support context. Exact next pitch prediction is inherently difficult,
+and top ranked model outputs should be considered probabilities rather than
 certainties.
 
 Future development could incorporate additional contextual features, improved
 probability calibration, bullpen analysis, player fatigue, more detailed
-in-game situations, and additional model architectures.
+in game situations, and additional model architectures.
 
 ---
 
@@ -314,10 +314,10 @@ Responsibilities included:
 * project design and research development
 * MLB data collection
 * PostgreSQL database development
-* data-pipeline engineering
+* data pipeline engineering
 * feature engineering
 * statistical analysis
-* scouting-report development
+* scouting report development
 * deployment and reproducibility
 * project documentation and communication
 
@@ -351,7 +351,7 @@ from the main portfolio navigation.
 [← **Return to Portfolio Home**](index.qmd)
 
 The portfolio highlights additional work in data engineering, automation,
-analytics, machine learning, and data-collection design.
+analytics, machine learning, and data collection design.
 
 
 

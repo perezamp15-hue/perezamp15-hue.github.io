@@ -63,7 +63,7 @@ git push
 ```
 
 Watch the **Actions** tab. When the run goes green, your site is live at
-`https://your_github_username.github.io/`. From now on, **push is publish** —
+`https://perezamp15-hue.github.io/capstone.html`. From now on, **push is publish** —
 that's the whole update cycle.
 
 ## Running code in your pages (freeze)
