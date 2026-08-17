@@ -12,16 +12,16 @@ This graduate data science capstone develops an end-to-end MLB analytics
 platform that transforms large-scale game and pitch-level data into
 matchup-specific recommendations for hitters and pitchers. The system combines
 automated data collection, PostgreSQL data engineering, feature generation,
-statistical analysis, machine learning, and automated HTML reporting to support
+statistical analysis, and automated HTML reporting to support
 baseball game preparation. Rather than presenting historical statistics alone,
-the project translates pitcher tendencies, batter performance, count context,
-pitch characteristics, and predictive model results into concise scouting
+the project translates pitcher tendencies, batter performance, count context, and
+pitch characteristics results into concise scouting
 information that can help identify how a hitter should approach an opposing
 pitcher and how a pitcher should attack an opposing lineup.
 
 **Project:** Graduate Data Science Capstone  
 **Institution:** Willamette University  
-**Primary tools:** Python · SQL · PostgreSQL · Scikit-learn · SQLAlchemy · Alembic · Railway · GitHub · Quarto
+**Primary tools:** Python · SQL · PostgreSQL · SQLAlchemy · Alembic · Railway · GitHub · Quarto
 
 ---
 
@@ -29,7 +29,7 @@ pitcher and how a pitcher should attack an opposing lineup.
 
 All major project deliverables are available directly from this page.
 
-[📄 **Final Write-up — Coming Soon**]{.btn .btn-secondary role="button"}
+[📄 **Final Write-up**](assets/capstone/write-up.pdf){.btn .btn-secondary role="button"}
 
 [🖼️ **View Poster PDF**](assets/capstone/poster.pdf){.btn .btn-primary role="button"}
 
@@ -47,9 +47,7 @@ requires more than simply displaying historical statistics.
 
 The primary research question for this project is:
 
-> **How can historical pitch-level MLB data be transformed into reproducible,
-> matchup-specific recommendations that help hitters and pitchers prepare for
-> an opponent?**
+> **How can pitch level MLB data be transformed into an automated, reproducible and interpretable decision support system for opponent scouting and match preparations?**
 
 The project explores whether pitcher tendencies, count context, batter
 performance, pitch characteristics, and historical matchup information can be
@@ -62,21 +60,17 @@ recommendations.
 
 The project follows an end-to-end data science workflow:
 
-**MLB Data Sources → Automated Data Collection → PostgreSQL Warehouse → Feature Engineering → Statistical & Machine-Learning Analysis → Matchup Recommendations → HTML Scouting Report**
+**MLB Data Sources → Automated Data Collection → PostgreSQL Warehouse → Feature Engineering → Statistical Analysis → Matchup Recommendations → HTML Scouting Report**
 
 The system begins with automated Python data collectors that retrieve MLB game,
 player, schedule, and pitch information. Data is validated and stored in a
 relational PostgreSQL warehouse. Feature-building workflows then transform raw
 pitch observations into pitcher, batter, count, and matchup-level information.
 
-Statistical analysis and predictive models use those features to identify
+Statistical analysis use those features to identify
 tendencies and estimate likely pitch-selection behavior. Finally, the reporting
 layer converts the analytical output into scouting information designed for
 game preparation.
-
-> **Figure 1. System architecture.** Raw MLB data moves through automated
-> collection, relational storage, feature engineering, modeling, and reporting
-> before becoming matchup-specific decision-support information.
 
 ---
 
@@ -111,8 +105,8 @@ of the project rather than preprocessing steps performed only once.
 
 ## Methods
 
-The analytical workflow combines descriptive baseball analytics, feature
-engineering, and predictive modeling.
+The analytical workflow combines descriptive baseball analytics, and feature
+engineering,.
 
 Feature generation creates historical summaries across several levels of
 context, including:
@@ -124,53 +118,6 @@ context, including:
 - batter tendencies
 - pitcher-batter matchup information
 
-Pitch-selection models are compared against progressively more specific
-baselines to determine whether additional context improves predictive
-performance.
-
-Models are evaluated using three primary metrics:
-
-**Accuracy** measures how often the model's highest-probability pitch matches
-the observed pitch.
-
-**Top-3 accuracy** measures how often the observed pitch appears among the
-model's three highest-ranked predictions.
-
-**Log loss** evaluates the quality of the full probability distribution rather
-than considering only the highest-ranked prediction.
-
-The final reporting layer combines predictive results with descriptive
-statistics to produce matchup-oriented scouting recommendations.
-
----
-
-## Results Highlight
-
-The evaluation indicates that incorporating pitcher-specific context improves
-pitch-selection prediction compared with broader count-only and overall
-baselines.
-
-| Model | Accuracy | Top-3 Accuracy | Log Loss |
-|---|---:|---:|---:|
-| **Pitcher + Count** | **37.1%** | **75.9%** | 3.156 |
-| **Pitcher** | **37.0%** | **76.3%** | 2.433 |
-| Count Only | 30.7% | 61.4% | 1.967 |
-| Overall Baseline | 30.7% | 60.8% | 1.984 |
-
-> **Table 1. Pitch-selection model performance.** Pitcher-specific models
-> substantially improved both exact and top-three prediction accuracy compared
-> with count-only and overall baselines.
-
-The pitcher model placed the observed pitch among its three highest-ranked
-predictions for approximately **76% of test observations**, compared with
-approximately **61% for the broader baselines**.
-
-The difference is important for the intended use of the project. The objective
-is not to claim that the next pitch can always be predicted exactly. Instead,
-the model can help narrow the set of pitches that a hitter or analyst should
-consider most likely in a particular context.
-
----
 
 ## Scouting & Decision-Support Output
 
@@ -195,12 +142,6 @@ stakeholder use case: **pre-game scouting and matchup preparation**.
 
 [📊 **Explore the Example Scouting Report**](assets/capstone/scouting-report.html){.btn .btn-primary role="button"}
 
-> **Figure 2. Example scouting output.** The HTML report translates the
-> underlying data and modeling workflow into matchup-oriented information that
-> can be reviewed without interacting directly with the database or Python
-> pipeline.
-
----
 
 ## Reproducibility
 
@@ -282,7 +223,7 @@ commands required to reproduce the main analysis and reports.
 This project uses publicly accessible baseball performance information and is
 intended for academic analysis and decision support.
 
-Model outputs should **not** be interpreted as guaranteed predictions of future
+Model outputs should not be interpreted as guaranteed predictions of future
 player behavior. Baseball performance is influenced by factors that are not
 fully represented in historical pitch data, including injuries, fatigue,
 mechanical adjustments, coaching decisions, weather, strategic changes, and
@@ -376,7 +317,6 @@ Responsibilities included:
 * data-pipeline engineering
 * feature engineering
 * statistical analysis
-* machine-learning development and evaluation
 * scouting-report development
 * deployment and reproducibility
 * project documentation and communication
@@ -393,7 +333,7 @@ Responsibilities included:
 
 All public project materials can be accessed below.
 
-[📄 **Final Write-up — Coming Soon**]{.btn .btn-secondary role="button"}
+[📄 **Final Write-up**](assets/capstone/write-up.pdf){.btn .btn-secondary role="button"}
 
 [🖼️ **Poster PDF**](assets/capstone/poster.pdf){.btn .btn-primary role="button"}
 
