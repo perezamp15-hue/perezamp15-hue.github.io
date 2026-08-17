@@ -58,9 +58,9 @@ recommendations.
 
 ## System Overview
 
-The project follows an end-to-end data science workflow:
+The project follows an end to end data science workflow:
 
-**MLB Data Sources → Automated Data Collection → PostgreSQL Warehouse → Feature Engineering → Statistical Analysis → Matchup Recommendations → HTML Scouting Report**
+**MLB Data Sources → Automated Data Collection → PostgreSQL Warehouse → Feature Engineering → Statistical Analysis → HTML Scouting Report**
 
 The system begins with automated Python data collectors that retrieve MLB game,
 player, schedule, and pitch information. Data is validated and stored in a
@@ -88,9 +88,9 @@ The data pipeline collects information including:
 - spin rate
 - release characteristics
 - pitch location
-- ball-strike count
+- ball/strike count
 - inning and game context
-- pitch and plate-appearance outcomes
+- pitch and plate appearance outcomes
 
 Historical and recurring data are stored in PostgreSQL. Python collectors and
 SQLAlchemy database models support automated ingestion, while Alembic
@@ -112,11 +112,11 @@ Feature generation creates historical summaries across several levels of
 context, including:
 
 - overall pitch tendencies
-- pitcher-specific tendencies
-- count-specific tendencies
+- pitcher specific tendencies
+- count specific tendencies
 - pitcher and count combinations
 - batter tendencies
-- pitcher-batter matchup information
+- pitcher batter matchup information
 
 
 ## Scouting & Decision-Support Output
@@ -208,7 +208,7 @@ The repository contains scripts for:
 * feature generation
 * model evaluation
 * matchup analysis
-* scouting-report generation
+* scouting report generation
 
 Because individual execution commands may change as the project is finalized,
 the repository README serves as the authoritative source for the current
