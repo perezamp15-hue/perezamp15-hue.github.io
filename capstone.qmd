@@ -29,7 +29,7 @@ pitcher and how a pitcher should attack an opposing lineup.
 
 All major project deliverables are available directly from this page.
 
-[📄 **Final Write-up**](assets/capstone/write-up.pdf){.btn .btn-secondary role="button"}
+[📄 **Final Write-up**](assets/capstone/Write-up.pdf){.btn .btn-secondary role="button"}
 
 [🖼️ **View Poster PDF**](assets/capstone/poster.pdf){.btn .btn-primary role="button"}
 
