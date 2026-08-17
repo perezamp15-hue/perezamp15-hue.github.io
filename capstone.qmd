@@ -2,7 +2,7 @@
 title: "MLB Matchup Intelligence & Pitch Strategy System"
 subtitle: "An end-to-end baseball analytics platform for data-driven matchup analysis and game planning"
 date: 2026-08-08
-categories: [capstone, baseball-analytics,data-engineering]
+categories: [capstone, baseball analytics, data-engineering]
 toc: true
 ---
 
